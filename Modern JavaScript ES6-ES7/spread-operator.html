@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+
+        // const msj = ["benim","adım","rüstem"];
+
+        // let sonuc ="";
+        // for(let x of msj){
+        //     sonuc += x +" ";
+        // }
+        // console.log(sonuc);
+
+        // console.log(...msj);
+
+        // const dizi1 = ["bir","iki"];
+        // const dizi2 = ["üç","dört"];
+
+        // const dizi3 = [...dizi1,...dizi2,"beş","altı"];
+
+        // console.log(dizi3);
+
+        const sayilar1 = [1,2,3];
+        // const sayilar2 = sayilar1; // referans copy
+        const sayilar2 = [...sayilar1]; // value copy
+
+        sayilar2[0] = 10;
+
+        console.log(sayilar1,sayilar2);
+        
+        const user = {
+            username: "rustemcirik",
+            email: "rstmcrk@gmail.com"
+        }
+
+        const address = {
+            city: "giresun"
+        }
+
+        console.log({...user,...address});
+
+    </script>
+</body>
+</html>
